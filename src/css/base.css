@@ -1,12 +1,9 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  color: rgba(12, 12, 12, 0.7);
-  background-color: #fbfbfb;
+  font-family: "Quicksand", sans-serif;
+  color: #0b0803;
+  background-color: #e0cbb4;
 }
 
-.section {
-  padding-top: 60px;
-}
 
 .visually-hidden {
   position: absolute;
