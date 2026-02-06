@@ -31,7 +31,7 @@
     padding-top: 40px;
 }*/
 
-.footer-logo {
+/*.footer-logo {
   display: inline-block;
   color: #fbfbfb;
   margin-bottom: 20px;
@@ -66,4 +66,11 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
+}*/
+.footer-link {
+  display: block;
+}
+
+.footer-logo {
+  stroke: #0B0803;
 }
