@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300..700&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/coffeejoy/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/coffeejoy/assets/index-CUbdKaPC.css">
+  <link rel="stylesheet" crossorigin href="/coffeejoy/assets/index-CT6mo2IP.css">
 </head>
 
 <body>
@@ -367,7 +367,14 @@
     </div>
 
     <div class="modal-image-wrapper">
-      <img class="modal-image" src="/coffeejoy/assets/illustration-mob-rUkVM48j.jpg" alt="coffee">
+      <picture>
+        <source srcset="/coffeejoy/assets/illustration-mob-rUkVM48j.jpg 1x, ./img/illustration-mob2.jpg 2x" media="(max-width: 767px)">
+        <source srcset="/coffeejoy/assets/illustration-TBG69duM.jpg 1x, /coffeejoy/assets/illustration2x-CgqdKDyV.jpg 2x" media="(max-width: 1440px)">
+
+        <source srcset="/coffeejoy/assets/illustration-TBG69duM.jpg 1x, /coffeejoy/assets/illustration2x-CgqdKDyV.jpg 2x" media="(min-width: 1158px)">
+        <img class="modal-image" src="/coffeejoy/assets/illustration-TBG69duM.jpg" alt="coffee" width="256" height="200">
+      </picture>
+      <img class="modal-image" src="/coffeejoy/assets/illustration-TBG69duM.jpg" alt="coffee" width="256" height="200">
     </div>
 
     <button class="modal-btn" type="button">Close</button>
