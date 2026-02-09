@@ -11,7 +11,14 @@
     </div>
 
     <div class="modal-image-wrapper">
-      <img class="modal-image" src="/img/illustration-mob.jpg" alt="coffee">
+      <picture>
+        <source srcset="./img/illustration-mob.jpg 1x, ./img/illustration-mob2.jpg 2x" media="(max-width: 767px)">
+        <source srcset="./img/illustration-tab.jpg 1x, ./img/illustration-tab2x.jpg 2x" media="(max-width: 1440px)">
+
+        <source srcset="./img/illustration.jpg 1x, ./img/illustration2x.jpg 2x" media="(min-width: 1158px)">
+        <img class="modal-image" src="/img/illustration.jpg" alt="coffee" width="256" height="200">
+      </picture>
+      <img class="modal-image" src="/img/illustration.jpg" alt="coffee" width="256" height="200">
     </div>
 
     <button class="modal-btn" type="button">Close</button>

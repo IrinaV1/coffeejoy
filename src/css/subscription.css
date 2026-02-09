@@ -28,10 +28,13 @@
   background-color: #e0cbb4;
   max-width: 288px;
   min-height: 631px;
+  width: 100%;
   border-radius: 40px;
   padding: 64px 16px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   overflow-y: auto;
   position: relative;
 
@@ -69,6 +72,10 @@
   fill: #fff;
 }
 
+.modal-wrapper {
+  margin-bottom: 24px;
+}
+
 .modal-title {
   font-family: "Aboreto", sans-serif;
   font-weight: 400;
@@ -78,6 +85,8 @@
   text-align: center;
   color: #0b0803;
   margin-bottom: 16px;
+
+
 }
 
 .modal-text {
@@ -86,10 +95,7 @@
   line-height: 1.5;
   text-align: center;
   color: #0b0803;
-}
 
-.modal-wrapper {
-  margin-bottom: 24px;
 }
 
 .modal-image-wrapper {
@@ -106,8 +112,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .modal-btn {
   box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
@@ -130,25 +134,75 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*
+
 .modal-btn:focus {
   background-color: #404bbf;
 
+}
 
-
-
-  @media 768 
+@media only screen and (min-width: 768px) {
   .modal {
-      max-width: 408px;
-      min-height: 584px;
-      padding-left: 24px;
-      padding-right: 24px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  
+    max-width: 704px;
+    min-height: 771px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-wrapper {
+    max-width: 576px;
+    margin-bottom: 48px;
+  }
+
+  .modal-title {
+    font-size: 36px;
+    padding-left: 37px;
+    padding-right: 37px;
+
+  }
+
+  .modal-image-wrapper {
+    width: 644px;
+    height: 374px;
+    margin-bottom: 48px;
+  }
+
+  .modal-btn {
+    width: 340px;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal {
+    max-width: 866px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .modal-btn-close {
+    right: 73px;
+  }
+
+  .modal-wrapper {
+    max-width: 738px;
+
+  }
+
+  .modal-title {
+    font-size: 48px;
+    padding: 0;
+  }
+}
+
+
+
+
+/* 
     .modal-btn-close:hover {
       background-color: #404bbf;
       border: none;
@@ -158,10 +212,11 @@
       background-color: #404bbf;
     }
   
-  
-  
-    .modal-checkbox-span {
-      display: inline-flex;
-    }
+
   }
+}
+
+
+
+
 }*/
