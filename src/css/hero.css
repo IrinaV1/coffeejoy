@@ -1,18 +1,18 @@
 /*PROMO*/
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   background-position: center;
   margin: 0 auto;
-  padding: 108.5px 0;
+  padding: 108.5px 0 108.5px 16px;
 
 }
 
 @media (min-resolution: 2x) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero-mob2x.jpg);
   }
 }
 
@@ -22,12 +22,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
-  padding-left: 16px;
-  max-width: 375px;
-  margin-left: 0;
+
+
+
+
 }
 
 .hero-title {
@@ -93,8 +93,15 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero.jpg);
     padding-top: 259px;
     padding-bottom: 259px;
+  }
+
+  @media (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero2x.jpg);
+    }
   }
 
   .hero-title {
