@@ -1,0 +1,114 @@
+.welcome-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.welcome-title {
+  font-family: "Aboreto", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+
+}
+
+.welcome-title-wrapper {
+  margin-bottom: 32px;
+}
+
+.welcome-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+
+  margin-bottom: 32px;
+}
+
+.welcome-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background-color: #6f4e37;
+
+  border-radius: 100px;
+  padding: 10px 24px;
+
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+
+}
+
+
+.welcome-container {
+  margin-bottom: 32px;
+  ;
+}
+
+.welcome-btn-icon {
+  fill: white;
+
+}
+
+.welcome-img-wrapper {
+  border-radius: 40px;
+  width: 100%;
+  height: 162px;
+  overflow: hidden;
+}
+
+.welcome-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .welcome-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .welcome-title-wrapper {
+    margin-bottom: 0;
+  }
+
+  .welcome-title-wrapper,
+  .welcome-wrapper {
+    flex: 1;
+
+    min-width: 0;
+
+  }
+
+  .welcome-img-wrapper {
+
+    height: auto;
+  }
+
+  .welcome-btn {
+    width: 181px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .welcome-title {
+    font-size: 48px;
+  }
+
+  .welcome-container {
+    margin-bottom: 80px;
+  }
+}

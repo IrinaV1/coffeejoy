@@ -115,7 +115,7 @@
 }
 
 .header-burger-btn {
-  display: in;
+  display: inline-block;
 
   background-color: transparent;
   width: 48px;
@@ -142,9 +142,9 @@
     display: block;
   }
 
-  .header-container {
+  /*.header-container {
     padding: 0 32px;
-  }
+  }*/
 
   .header-list {
     display: flex;
@@ -154,6 +154,22 @@
 
   .header-link {
     display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    opacity: 0.5;
+  }
+
+  .header-link:active {
+    opacity: 0.7;
   }
 }
 
