@@ -1,20 +1,33 @@
 <section id="subscrube" class="section">
-  <div class="container">
-    <h2 class="subscrube-title">Join Our Coffee Community</h2>
-    <p class="subscrube-text">Experience the joy of coffee delivered right to your door. Sign up today!</p>
-    <form action="">
-      <div class="subscrube-input-wrapper">
-        <input class="subscrube-input" type="email" aria-label="email" placeholder="Your Email Here"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-        <p class="text-valid">Succes!</p>
-        <p class="text-invalid">Invalid email, try again</p>
-      </div>
-      <button class="subscrube-btn" type="submit">Subscribe
-        <svg class="" width="" height="">
-          <use href=""></use>
-        </svg>
-      </button>
-      <p>By clicking Get Started, you agree to our Terms and Conditions.</p>
-    </form>
+  <div class="container subscrube-container">
+    <div class="subscrube-wrapper">
+      <h2 class="subscrube-title">Join Our Coffee Community</h2>
+      <p class="subscrube-text">Experience the joy of coffee delivered right to your door. Sign up today!</p>
+      <form class="subscrube-form" action="">
+        <div class="subscrube-input-wrapper">
+          <input class="subscrube-input" type="email" aria-label="email" placeholder="Your Email Here"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
+        </div>
+        <button class="subscrube-btn" type="submit">Subscribe
+          <svg class="subscrube-icon" width="24" height="24">
+            <use href="/img/icons.svg#icon-chevrons-right"></use>
+          </svg>
+        </button>
+        <p class="subscrube-form-text">By clicking Get Started, you agree to our Terms and Conditions.</p>
+      </form>
+
+    </div>
+    <div class="subscrube-wrapper-img">
+      <picture>
+        <source srcset="/img/subscrube-mob.jpg 1x, /img/subscrube-mob2x.jpg 2x" media="(max-width: 767px)">
+        <source srcset="/img/subscrube.jpg 1x, /img/subscrube2x.jpg 2x" media="(max-width: 1439px)">
+
+        <source srcset="/img/subscrube.jpg 1x, /img/subscrube2x.jpg 2x" media="(min-width: 1440px)">
+        <img class="subscrube-img" src="/img/subscrube.jpg" alt="subscrube" width="640" height="400">
+      </picture>
+
+    </div>
   </div>
 </section>
