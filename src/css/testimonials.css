@@ -55,3 +55,27 @@
   line-height: 1.5;
 
 }
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .testimonials-item {
+
+    width: calc((100% - 24px) / 2);
+
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .testimonials-item {
+
+    width: calc((100% - 72px) / 4);
+
+  }
+}
